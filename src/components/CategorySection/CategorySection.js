@@ -26,6 +26,7 @@ const ProductCategories = () => {
 
   if (loading) return <Loading />;
   const containerStyle = location !== "/" ? { marginTop: "130px" } : {};
+  console.log(baseurl + category.image);
 
   return (
     <div className="container mx-auto p-6" >
@@ -34,7 +35,7 @@ const ProductCategories = () => {
       <div className="content-1-details" style={containerStyle}>
         <Row>
           <div className="section-heading">
-            <div className=  "heading-text">Our Products</div>
+            <div className="heading-text">Our Products</div>
             <div className="heading-desc">An overview of what we do.</div>
           </div>
         </Row>
@@ -57,6 +58,7 @@ const ProductCategories = () => {
                   borderRadius: "2rem",
                 }}
               />
+              <p>{baseurl + category.image}</p>
             </Link>
             <span
               style={{
