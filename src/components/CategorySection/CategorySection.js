@@ -26,8 +26,6 @@ const ProductCategories = () => {
 
   if (loading) return <Loading />;
   const containerStyle = location !== "/" ? { marginTop: "130px" } : {};
-  console.log(baseurl + category.image);
-
   return (
     <div className="container mx-auto p-6" >
       {!location === "/" && <Breadcrumb style={{ marginTop: "130px" }} />}
