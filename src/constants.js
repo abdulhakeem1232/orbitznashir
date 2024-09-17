@@ -1,1 +1,1 @@
-export const baseurl = 'https://orbitbackend-production.up.railway.app'
+export const baseurl = 'https://orbitbackend-production.up.railway.app/'
